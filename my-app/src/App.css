@@ -19,6 +19,8 @@
   color: rgb(61, 58, 58);
 }
 .day {
+  min-height: 570px;
+  max-height: 800px;
   width: 250px;
   border: 2px solid rgb(63, 103, 214);
   border-radius: 15px;
