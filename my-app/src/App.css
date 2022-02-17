@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: rgb(48, 95, 197);
+  height: 100px;
+}
+.days {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 2vmin);
+  color: rgb(61, 58, 58);
+}
+.day {
+  width: 250px;
+  border: 2px solid rgb(63, 103, 214);
+  border-radius: 15px;
+}
+.temperature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
