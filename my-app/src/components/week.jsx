@@ -1,9 +1,9 @@
 import React from "react";
 import Day from "./day";
 
-function WeekWeather(listOfWeatherPerDay) {
+function WeekWeather(props) {
   let daysComponents = [];
-  for (let dayInfo of listOfWeatherPerDay) {
+  for (let dayInfo of props.listOfWeatherPerDay) {
     let dayComponent = Day(dayInfo);
     daysComponents.push(dayComponent);
   }

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import convertDate from "./convert-date";
 
 const windFieldDescription = "Ветер, м/сек.: ";
 const humidityFieldDescription = "Влажность, %: ";
@@ -6,20 +7,6 @@ const atmPressureFieldDescription = "Давление, мм: ";
 const minTemp = "мин.";
 const maxTemp = "макс.";
 const temprSymbol = "°";
-const locale = "ua-UA";
-
-function convertDate(dateStr) {
-  const [day, month, year] = dateStr.split("/");
-  let date = new Date(year, month - 1, day);
-
-  let options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-  return date.toLocaleDateString(locale, options);
-}
 
 function Day(props) {
   return (

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {Header()}
-      {WeekWeather(WEATHER_FOR_WEEK)}
+      {WeekWeather({ listOfWeatherPerDay: WEATHER_FOR_WEEK })}
     </div>
   );
 }

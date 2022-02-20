@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Day should match snapshot 1`] = `"<div class=\\"day\\"><p>воскресенье, 27 февраля 2022 г.</p><img src=\\"./img/snow.png\\" alt=\\"снег\\"/><div class=\\"temperature\\"><div><p>мин.</p><p>-2°</p></div><div><p>макс.</p><p>+3°</p></div></div><p>Давление, мм: <span>750</span></p><p>Влажность, %: <span>62</span></p><p>Ветер, м/сек.: <span>2.0</span></p></div>"`;

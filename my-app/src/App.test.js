@@ -1,4 +1,3 @@
-// import { render, screen } from '@testing-library/react';
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
@@ -13,10 +12,9 @@ describe("App", () => {
     expect(wrapper.find(".App").exists()).toBe(true);
     expect(wrapper.find(".App").length).toBe(1);
   });
-});
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+  test("should match snapshot", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});

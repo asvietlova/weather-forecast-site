@@ -10,8 +10,10 @@
   height: 100px;
 }
 .days {
+  height: fit-content;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 5px;
   align-items: center;
   justify-content: center;
@@ -19,8 +21,7 @@
   color: rgb(61, 58, 58);
 }
 .day {
-  min-height: 570px;
-  max-height: 800px;
+  max-height: 100%;
   width: 250px;
   border: 2px solid rgb(63, 103, 214);
   border-radius: 15px;
@@ -29,4 +30,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.day img {
+  width: 130px;
+  height: 110px;
 }
