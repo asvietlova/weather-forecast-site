@@ -1,2 +1,2 @@
-# JS 3.0 HW8
+weather forecast site using Create React App
 
